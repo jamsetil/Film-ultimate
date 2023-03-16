@@ -1,0 +1,67 @@
+.featuredMovieWrapper {
+  display: flex;
+  flex-direction: column;
+  gap: 1rem;
+}
+
+.movieTitle {
+  font-size: 72px;
+  text-transform: uppercase;
+  letter-spacing: -1px;
+  font-weight: 700;
+  line-height: 72px;
+  max-width: 25ch;
+}
+
+.overview {
+  font-size: 24px;
+  max-width: 50ch;
+}
+
+.addButton {
+  color: #fafafa;
+  height: 3rem;
+  width: 3rem;
+  padding-left: 15.5px;
+  border-radius: 50%;
+  border: 1px solid #fafafa;
+}
+
+.actionButtons {
+  display: flex;
+  align-items: center;
+  gap: 1rem;
+}
+
+.playButton {
+  background: #fafafa;
+  color: black;
+  width: 14rem;
+  border-radius: 2rem;
+  height: 3rem;
+  text-align: center;
+  padding: 0.65rem 0;
+}
+
+.moviePosterOverlay {
+  position: absolute;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  background: linear-gradient(
+    0deg,
+    rgba(0, 0, 0, 1) 0%,
+    rgba(0, 0, 0, 0.9) 30%,
+    rgba(0, 0, 0, 0.7) 50%,
+    rgba(255, 255, 255, 0) 100%
+  );
+  z-index: -1;
+}
+
+.moviePoster img {
+  height: auto !important;
+  z-index: -2;
+  max-height: 100vh;
+  object-fit: cover;
+}
